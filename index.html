@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield Phishing Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>CyberShield</h1>
+
+        <p class="subtitle">
+            Detect suspicious phishing messages and unsafe links.
+        </p>
+
+        <textarea
+            id="userInput"
+            placeholder="Paste a suspicious email, message, or URL here..."
+        ></textarea>
+
+        <button onclick="analyzeMessage()">
+            Analyze Message
+        </button>
+
+        <button type="button" class="clear-button" onclick="clearResults()">
+        Clear Results
+        </button>
+
+        <div id="results">
+
+            <h2>Analysis Results</h2>
+
+            <p id="riskLevel">
+                Risk Level:
+            </p>
+
+            <p id="warningSigns">
+                Warning Signs:
+            </p>
+
+            <p id="recommendation">
+                Recommendation:
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
