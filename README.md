@@ -57,4 +57,6 @@ URGENT! Your bank account has been suspended. Click here to verify your password
 
 ## Video Demonstration
 
-(https://youtu.be/muU6XVlyVJ8)
+(Add your YouTube video link here)
+
+URGENT! Your bank account has been suspended. Click here to verify your password: http://fake-bank-login.com
