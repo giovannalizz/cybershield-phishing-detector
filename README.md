@@ -65,13 +65,16 @@ URGENT! Your bank account has been suspended. Click here to verify your password
 
 ## Video Demonstration
 
-(Add your YouTube video link here)
+https://youtu.be/Hn_oB-1VUb4 
+
 
 ---
 
 ## Author
 
-Gio
+Giovanna Liz Moura Maloy
 
 CSE 310 – Applied Programming
 BYU-Idaho
+
+
