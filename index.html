@@ -9,44 +9,31 @@
 <body>
 
     <div class="container">
+        <h1>CyberShield Phishing Detector</h1>
 
-        <h1>CyberShield</h1>
+        <p>Paste a suspicious message or email below:</p>
 
-        <p class="subtitle">
-            Detect suspicious phishing messages and unsafe links.
-        </p>
+        <textarea id="userInput" rows="8" placeholder="Paste message here..."></textarea>
 
-        <textarea
-            id="userInput"
-            placeholder="Paste a suspicious email, message, or URL here..."
-        ></textarea>
+        <br><br>
 
-        <button onclick="analyzeMessage()">
-            Analyze Message
+        <button onclick="analyzeMessage()">Analyze Message</button>
+
+        <button onclick="clearResults()">Clear Results</button>
+
+        <button onclick="window.location.href='warning-signs.html'">
+            Learn About Phishing Signs
         </button>
 
-        <button type="button" class="clear-button" onclick="clearResults()">
-        Clear Results
-        </button>
+        <h2>Results</h2>
 
-        <div id="results">
+        <p><strong>Risk Level:</strong> <span id="riskLevel"></span></p>
 
-            <h2>Analysis Results</h2>
+        <p><strong>Warning Signs:</strong></p>
+        <ul id="warningSigns"></ul>
 
-            <p id="riskLevel">
-                Risk Level:
-            </p>
-
-            <p id="warningSigns">
-                Warning Signs:
-            </p>
-
-            <p id="recommendation">
-                Recommendation:
-            </p>
-
-        </div>
-
+        <p><strong>Recommendation:</strong></p>
+        <p id="recommendation"></p>
     </div>
 
     <script src="script.js"></script>
