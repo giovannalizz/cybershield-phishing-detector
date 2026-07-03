@@ -99,17 +99,17 @@ function analyzeMessage() {
 
     if (score >= 5) {
         riskLevel.textContent = "High Risk";
-        riskLevel.className = "high";
+        riskLevel.className = "high-risk";
         recommendation.textContent =
             "Do not click any links or reply to this message. Verify the sender using an official website or trusted contact method.";
     } else if (score >= 2) {
         riskLevel.textContent = "Medium Risk";
-        riskLevel.className = "medium";
+        riskLevel.className = "medium-risk";
         recommendation.textContent =
             "Be careful. Check the sender, avoid clicking links, and verify the message before taking action.";
     } else {
         riskLevel.textContent = "Low Risk";
-        riskLevel.className = "low";
+        riskLevel.className = "low-risk";
         recommendation.textContent =
             "This message does not show many common phishing signs, but you should still be cautious with links and personal information.";
     }
@@ -122,3 +122,25 @@ function clearResults() {
     document.getElementById("warningSigns").innerHTML = "";
     document.getElementById("recommendation").textContent = "";
 }
+
+// =========================
+// Welcome Screen
+// =========================
+
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        const welcome = document.getElementById("welcome-screen");
+        const main = document.getElementById("main-content");
+
+        welcome.classList.add("fade-out");
+
+        setTimeout(function () {
+            welcome.style.display = "none";
+            main.style.display = "block";
+        }, 1000);
+
+    }, 5000);
+
+});

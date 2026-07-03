@@ -8,32 +8,44 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>CyberShield Phishing Detector</h1>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <h1>🛡️ Welcome to CyberShield</h1>
+        <p>Protect yourself from phishing attacks.</p>
+        <p class="loading">Loading...</p>
+    </div>
 
-        <p>Paste a suspicious message or email below:</p>
+    <!-- Main Website -->
+    <div id="main-content" style="display:none;">
 
-        <textarea id="userInput" rows="8" placeholder="Paste message here..."></textarea>
+        <div class="container">
+            <h1>CyberShield Phishing Detector</h1>
 
-        <br><br>
+            <p>Paste a suspicious message or email below:</p>
 
-        <button onclick="analyzeMessage()">Analyze Message</button>
+            <textarea id="userInput" rows="8" placeholder="Paste message here..."></textarea>
 
-        <button onclick="clearResults()">Clear Results</button>
+            <br><br>
 
-        <button onclick="window.location.href='warning-signs.html'">
-            Learn About Phishing Signs
-        </button>
+            <button onclick="analyzeMessage()">Analyze Message</button>
 
-        <h2>Results</h2>
+            <button onclick="clearResults()">Clear Results</button>
 
-        <p><strong>Risk Level:</strong> <span id="riskLevel"></span></p>
+            <button onclick="window.location.href='warning-signs.html'">
+                Learn About Phishing Signs
+            </button>
 
-        <p><strong>Warning Signs:</strong></p>
-        <ul id="warningSigns"></ul>
+            <h2>Results</h2>
 
-        <p><strong>Recommendation:</strong></p>
-        <p id="recommendation"></p>
+            <p><strong>Risk Level:</strong> <span id="riskLevel"></span></p>
+
+            <p><strong>Warning Signs:</strong></p>
+            <ul id="warningSigns"></ul>
+
+            <p><strong>Recommendation:</strong></p>
+            <p id="recommendation"></p>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
